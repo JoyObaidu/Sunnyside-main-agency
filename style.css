@@ -1,0 +1,396 @@
+@import
+ url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+:root{
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
+    --Dark-blue-photography-text: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue:  hsl(206, 94%, 68%);
+    --White: hsl(0, 0%, 100%);
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+    width: 100%;
+    margin: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HEADER */
+header{
+    background-image: url("./images/mobile/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    height: 330px;
+    text-align: center;
+}
+header > img{
+    width: 20px;
+    margin: auto;
+    position: fixed;
+    top: 40%;
+}
+h1{
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+header h1{
+    letter-spacing: 4px;
+    font-size: 2rem;
+    color: var(--White);
+    margin-top: 0px;
+}
+
+header nav .navbrand img{
+    width: 80px;
+}
+
+/* NAVBAR STYLES */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-menu{
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    background-color: var(--White);
+    top: 15%;
+    padding: 40px 30px;
+    display: none;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.nav-menu ul li {
+   list-style-type: none;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: var(--Very-dark-grayish-blue);
+    font-weight: bolder;
+    font-family: 'Barlow', sans-serif;
+    margin: 20px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+.nav-menu ul li a:hover{
+    background-color: var(--Yellow);
+    color: var(--Dark-blue-photography-text);
+    padding: 10px;
+    text-transform: uppercase;
+}
+.nav-menu::before{
+    content: '';
+    background-color: var(--White);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -10%;
+    bottom: 0;
+    right: 0;
+    border-radius: 100% 0 0 0;
+}
+
+/* SECTIONS */
+
+section{
+    text-align: center;
+}
+section .content{
+    padding: 40px 20px;
+}
+section h2{
+    font-size: 1.8rem;
+}
+section img{
+    width: 100%;
+}
+.transform .desktop-transform{
+    display: none;
+}
+.transform .mobile-transform{
+    display: block;
+}
+
+section .content a{
+    font-weight: bolder;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.8rem;
+    border-bottom: 5px solid var(--Soft-red);
+    padding-top: 20px;
+}
+section.stand h2{
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+}
+section.graphics{
+    background-image: url("./images/mobile/image-graphic-design.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+section.graphics .content{
+    padding-top: 280px;
+}
+section.graphics .content h2{
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+section.graphics .content p{
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+
+}
+section.photography{
+    background-image: url("./images/mobile/image-photography.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+
+section.photography .content{
+    padding-top: 300px;
+}
+section.photography .content h2{
+   color: var(--Dark-blue-photography-text);
+   font-weight: 900;
+   font-family: 'Barlow', sans-serif;
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+}
+section.photography .content p{
+    color: var(--Dark-blue-photography-text);
+}
+.testimonials h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1rem;
+}
+
+.testimonials{
+    padding: 40px 20px;
+}
+.gallery .content div *{
+    padding: 20px;
+}
+.testimonials .content div *{
+    margin: 20px 0;
+}
+.testimonials .content div img{
+    width: 50px;
+    border-radius: 50%;
+}
+.testimonials .content h1{
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.gallery .image{
+    width: 100%;
+}
+
+section .content a{
+    text-decoration: none;
+    color: #000;
+    margin-top: 20px;
+}
+
+section .content{
+    padding: 40px;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    background-color: hsla(168, 80%, 70%, 0.866);;
+    color:  hsla(168, 71%, 85%, 0.704);
+    text-align: center;
+}
+
+
+/*-----------------------------DESKTOP DESIGNS------------------------------*/
+@media screen and (min-width :500px) {
+    header{
+        background-image: url("./images/desktop/image-header.jpg");
+        height: 350px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    header h1{
+        font-size: 30px;
+        color: var(--White);
+        text-align: center;
+        position: relative;
+        top: -40%;
+    }
+    .navbar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navbrand{
+        font-size: 1.2rem;
+}
+    .nav-open{
+        display: none;
+    }
+    .nav-menu{
+        display: block;
+        background: none;
+    }
+    .nav-menu ul{
+        position: relative;
+        float: right;
+        top: -80px;
+        background: none;
+        display: inline-flex;
+        flex-direction: row;
+        font-size: 0.8rem;
+    }
+    .nav-menu ul li{
+       list-style-type: none;
+    }
+    .nav-menu ul li a{
+        text-decoration: none;
+        color: var(--Very-dark-grayish-blue);
+        font-weight: 200;
+        font-size: 0.5rem;
+        font-family: 'Barlow', sans-serif;
+        color: var(--White);
+    }
+    .nav-menu ul li a:hover{
+        background-color: var(--White);
+        color: var(--Dark-blue-photography-text);
+        padding: 10px;
+        text-transform: uppercase;
+        border-radius: 20px;
+    }
+    .nav-menu::before{
+        display: none;
+    }
+  .transform{
+    display: flex;
+    text-align: left;
+    flex-flow: row-reverse wrap;
+  }
+  .container *{
+    margin: 0;
+  }
+  .transform .image{
+    flex: 50%;
+  }
+  .transform .content{
+    flex: 50%;
+  }
+   .transform img.mobile-transform{
+    display: none;
+   }
+   .transform img.desktop-transform{
+    display: block;
+   }
+   section.photography{
+    background-image: url("./images/desktop/image-photography.jpg");
+}
+
+section.graphics{
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+}
+section.stand{
+    display: flex;
+    flex-flow: row wrap;
+}
+.stand-img{
+    flex: 50%;
+}
+.stand-cnt{
+    flex: 50%;
+}
+.graph-photo{
+    display: flex;
+    flex-flow: row wrap;
+    margin: -5px;
+}
+.graphics{
+     flex: 50%;
+}
+.photography{
+      flex: 50%;
+}
+.testimonials .content{
+   display: flex;
+   flex-direction: row;
+}
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+}
+footer .links{
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+}
+footer h1{
+    color: hsl(169, 54%, 10%);
+    font-weight: 900;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+}
+footer .socials{
+   text-align: center;
+   margin: 30px;
+   display: flex;
+   align-items: center;
+}
+footer .socials a{
+    margin: 20px;
+    text-align: center;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
