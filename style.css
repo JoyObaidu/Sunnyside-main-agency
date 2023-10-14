@@ -44,6 +44,7 @@ header > img{
     margin: auto;
     position: fixed;
     top: 40%;
+    left: 40%;
 }
 h1{
     font-family: 'Barlow', sans-serif;
@@ -255,14 +256,21 @@ footer{
         position: relative;
         top: -40%;
     }
+    header > img{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 3rem;
+}
     .navbar{
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        font-size: .8rem;
     }
     .navbrand{
-        font-size: 1.2rem;
+        font-size: 2rem;
 }
     .nav-open{
         display: none;
@@ -300,6 +308,13 @@ footer{
     }
     .nav-menu::before{
         display: none;
+    }
+    .content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
   .transform{
     display: flex;
@@ -359,7 +374,9 @@ section.stand{
     flex-direction: row;
 }
 }
-
+footer{
+    text-align: center;
+}
 footer a{
     text-decoration: none;
     color: var(--Dark-desaturated-cyan-graphic-design-text);
@@ -371,8 +388,6 @@ footer a{
 }
 footer .links{
     display: flex;
-    text-align: center;
-    margin-top: 30px;
 }
 footer h1{
     color: hsl(169, 54%, 10%);
@@ -381,16 +396,17 @@ footer h1{
     font-size: 1.5rem;
 }
 footer .socials{
-   text-align: center;
    margin: 30px;
    display: flex;
    align-items: center;
 }
 footer .socials a{
     margin: 20px;
-    text-align: center;
 }
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
